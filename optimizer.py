@@ -2,23 +2,13 @@ from pathlib import Path
 import optimizers.PSO as pso
 import optimizers.MVO as mvo
 import optimizers.GWO as gwo
-import optimizers.MFO as mfo
-import optimizers.CS as cs
-import optimizers.BAT as bat
-import optimizers.WOA as woa
-import optimizers.FFA as ffa
-import optimizers.SSA as ssa
 import optimizers.GA as ga
-import optimizers.HHO as hho
-import optimizers.SCA as sca
-import optimizers.JAYA as jaya
-import optimizers.DE as de
+
 import benchmarks
 import csv
 import numpy
 import time
 import warnings
-import os
 import plot_convergence as conv_plot
 import plot_boxplot as box_plot
 

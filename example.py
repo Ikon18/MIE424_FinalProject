@@ -7,7 +7,7 @@ optimizer = ["GA", "PSO", "GWO", "MVO"]
 # Select benchmark function"
 # "F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12","F13","F14","F15","F16","F17","F18","F19"
 # "Ca1","Ca2","Gt1","Mes","Mef","Sag","Tan","Ros"
-objectivefunc = ["Ackley"]
+objectivefunc = ["Rastrigin"]
 
 # Select number of repetitions for each experiment.
 # To obtain meaningful statistical results, usually 30 independent runs are executed for each algorithm.
@@ -19,9 +19,9 @@ params = {"PopulationSize": 30, "Iterations": 50}
 # Choose whether to Export the results in different formats
 export_flags = {
     "Export_avg": True,
-    "Export_details": True,
+    "Export_details": False,
     "Export_convergence": True,
-    "Export_boxplot": True,
+    "Export_boxplot": False,
 }
 
 run(optimizer, objectivefunc, NumOfRuns, params, export_flags)
